@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>	
+  	form, h2{
+  		border : 2px solid blue;
+  		width : 40%;
+  		height : auto;
+  		padding : 20px; 
+  		margin : 20px auto;
+  	}  	
+  	h2 {
+  		border : none;
+  		text-align: center;
+  	} 	
+  	label{
+    	width : 100px;
+    	height : 30px;
+    	display : inline-block;
+  	}
+</style>
+</head>
+<body>
+	<h2>회원가입 입력폼</h2>
+	<form name ="ff" action = "join폼연습.jsp" method = "post">
+		<label>이름</label>
+		<input type = "text" name = "name"><br>
+		<label>주소</label>
+		<input type = "text" name = "addr"><br>
+		<label>이메일</label>
+		<input type = "email" name = "email"><br><br>
+		<input type = "radio" name = "gender" value = "Male">
+		<label>Male</label><br><br>
+	    <input type = "radio" name = "gender" value = "Female">
+		<label>Female</label><br><br>
+		
+		<!-- <input type = "radio" name = "gender" value = "Male">Male<br><br> -->
+	    <!-- <input type = "radio" name = "gender" value = "Female">Female<br><br> -->
+		
+		<input type = "submit" value = "Send">
+	    <input type = "reset" value = "원래대로">
+	</form>
+</body>
+</html>
